@@ -1,4 +1,5 @@
 import { Button, Checkbox, Form, Input } from 'antd';
+import { toast } from 'react-toastify';
 import '../Styles/Common.css';
 const Login = () => {
       const onFinish = (values) => {
@@ -18,7 +19,11 @@ const Login = () => {
         })
         .then(res => res.json())
         .then(data => {
-            console.log(data)
+            if(data.error){
+              toast.error(data.error)
+            }else{
+              toast.success(data.token)
+            }
         })
       };
 
