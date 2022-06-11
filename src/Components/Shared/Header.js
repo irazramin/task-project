@@ -1,35 +1,39 @@
 import { Button, Menu } from 'antd';
 import React from 'react';
-const SubMenu = Menu.SubMenu;
-const MenuItemGroup = Menu.ItemGroup;
+import '../Styles/Common.css';
 const Header = () => {
   return (
     <Menu
       mode='horizontal'
-      style={{
-        boxShadow: `1px 2px 3px rgba(0,0,0,0.1)`,
-        flexDirection:"column"
-      }}
+      className='nav'
+      // style={{ boxShadow: ` 1px 2px 3px rgba(0, 0, 0, 0.1)` }}
     >
       <div
         style={{
           display: `flex`,
           justifyContent: 'space-between',
           alignItems: 'center',
+          width: '90%',
+          margin: '0 auto',
         }}
       >
         <div>
           <h2>ATools</h2>
         </div>
-        <div style={{ display: `flex` }}>
-          <Menu.Item key='mail'>
+        <div style={{ display: `flex` }} className='btn-hide'>
+          <Menu.Item>
             <Button style={{ width: '150px' }} type='primary'>
               Start free trail
             </Button>
           </Menu.Item>
 
-          <Menu.Item key='alipay'>
-            <Button style={{ width: '150px' }} type='info'>
+          <Menu.Item>
+            <Button
+              style={{
+                width: '150px',
+              }}
+              className='login-btn'
+            >
               login
             </Button>
           </Menu.Item>

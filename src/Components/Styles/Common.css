@@ -1,0 +1,80 @@
+.nav {
+    box-shadow: 1px 2px 3px #0000001a !important;
+    /* flex-direction: column !important; */
+}
+
+.app-height {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.login-page {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.login-btn {
+    background: #FB8400 !important;
+    border: 0 !important;
+    color: white !important;
+}
+
+.login-text {
+    /* width: 330px; */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.login-text h2 {
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.login-text span {
+    margin-top: 10px;
+}
+
+.login-bg-img {
+    background-color: #023047;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: center;
+    height: 100vh;
+    margin: 25% auto;
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .login-side-bg {
+        display: none;
+    }
+
+    .btn-hide {
+        display: none !important;
+    }
+
+    .login-form {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+        height: 100vh;
+        margin: 25% auto;
+
+
+    }
+
+    .login-page {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
